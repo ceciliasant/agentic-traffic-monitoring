@@ -1,0 +1,6 @@
+,occurrences,sessions affected
+5-background-task cap refused a delegate,952,142
+rate limit error reached the agent,0,0
+delegate source not found,95,8
+missing required parameters,618,84
+agent hit its action limit,49,7

@@ -1,0 +1,89 @@
+# Run metrics
+
+- **sessions**: 169
+## wall_time_s
+
+- n: 169.0
+- mean: 363.44
+- std: 288.02
+- min: 140.0
+- p50: 281.0
+- p90: 370.2
+- p95: 1255.0
+- p99: 1505.2
+- max: 1815.0
+
+- **wall_time_total_h**: 17.06
+## llm_calls_per_session (turns)
+
+- n: 169.0
+- mean: 125.34
+- std: 25.02
+- min: 52.0
+- p50: 123.0
+- p90: 148.0
+- p95: 152.2
+- p99: 223.32
+- max: 241.0
+
+## turns_vs_max_150
+
+- mean_share_of_max: 0.836
+- sessions_at_or_over_max: 14
+
+## input_tokens_per_session
+
+- n: 169.0
+- mean: 1012976.91
+- std: 309081.52
+- min: 339814.0
+- p50: 1018923.0
+- p90: 1349295.6
+- p95: 1445386.2
+- p99: 1692498.08
+- max: 1942808.0
+
+## output_tokens_per_session
+
+- n: 169.0
+- mean: 51383.19
+- std: 28198.83
+- min: 23846.0
+- p50: 43057.0
+- p90: 49891.4
+- p95: 147334.0
+- p99: 150665.96
+- max: 183442.0
+
+- **total_input_tokens**: 171193098
+- **total_output_tokens**: 8683759
+## max_prompt_vs_context_24000
+
+- pct_of_limit_per_session: {'n': 169.0, 'mean': 130.53, 'std': 13.31, 'min': 79.79, 'p50': 129.52, 'p90': 146.7, 'p95': 153.83, 'p99': 163.28, 'max': 169.52}
+- sessions_over_80pct: 168
+- sessions_over_100pct: 168
+
+## summarize
+
+- calls_flagged_as_summarize (heuristic): 0
+- sessions_with_summarize: 0
+
+## failures
+
+- sessions_goose_nonzero_exit: 0
+- sessions_at_turn_limit: 14
+- llm_requests_failed_or_timed_out: 44
+- llm_requests_retried_after_429_503: 1007
+- llm_retries_total: 4503
+- max_queue_wait_s: 0.0
+- total_queue_wait_s: 0.0
+- outputs_truncated_finish_reason_length: 11
+- sessions_with_truncated_output: 11
+- output_tokens_in_truncated_requests: 1172930
+- share_of_all_output_tokens_in_truncated: 0.135
+- longest_single_request_s: 1539.1
+- requests_over_300s: 12
+- prompt_tokens_over_context_limit_requests: 936
+- sessions_with_tool_errors: 91
+
+- **usage_reported_by_server_share**: 0.998

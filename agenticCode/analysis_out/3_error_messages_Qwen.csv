@@ -1,0 +1,8 @@
+extra,count
+timed out,6
+Prediction computed but could not be persisted to historic Ditto: [Errno -5] No address as,3
+"Prediction failed for 741_1.0: NaN features: ['Avg_Temperature', 'Avg_Precipitation']",1
+flows_payload is not valid JSON: Expecting value: line 1 column 1 (char 0),1
+"Prediction failed for 716_1.0: NaN features: ['Avg_Temperature', 'Avg_Precipitation']",1
+month must be in 1..12: 2024-00-29T04:00:00,1
+Prediction lookup failed: ,1

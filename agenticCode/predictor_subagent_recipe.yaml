@@ -1,0 +1,48 @@
+title: Traffic Detector Predictor Subagent
+description: Creates and saves one prediction for the current hour.
+
+settings:
+  max_turns: 8
+
+instructions: |
+  Predict sensor {{sensor_id}}, direction {{direction_label}} ({{direction}}), hour {{predict_timestamp}}.
+  Call each tool once. If a call fails, do not retry.
+  Never use the load tool or the delegate tool. The load tool does not call these tools.
+
+  1. Call get_flows(sensor_id="{{sensor_id}}", direction="{{direction}}", timestamp="{{predict_timestamp}}").
+  2. Call baseline_predict(sensor_id="{{sensor_id}}", direction="{{direction}}", flows_payload=<the exact result of step 1>).
+     If status is "logged", return the logged result.
+     If status is "missing_lags" or the call fails, return the failed result.
+
+  Logged result:
+  {"sensor_id": "{{sensor_id}}", "direction_label": "{{direction_label}}", "direction": "{{direction}}",
+   "predict_timestamp": "{{predict_timestamp}}", "prediction_logged": true, "baseline_prediction": 0}
+
+  Failed result:
+  {"sensor_id": "{{sensor_id}}", "direction_label": "{{direction_label}}", "direction": "{{direction}}",
+   "predict_timestamp": "{{predict_timestamp}}", "prediction_logged": false, "error": "<error text>"}
+
+  Fill in the real values. Return only the JSON.
+
+prompt: Predict sensor {{sensor_id}}, {{direction_label}}, hour {{predict_timestamp}}.
+
+parameters:
+  - key: sensor_id
+    input_type: string
+    requirement: required
+    description: Sensor ID.
+
+  - key: direction
+    input_type: string
+    requirement: required
+    description: Direction value, 1.0 or -1.0.
+
+  - key: direction_label
+    input_type: string
+    requirement: required
+    description: arrabida-freixo or freixo-arrabida.
+
+  - key: predict_timestamp
+    input_type: string
+    requirement: required
+    description: ISO timestamp of the hour to predict.

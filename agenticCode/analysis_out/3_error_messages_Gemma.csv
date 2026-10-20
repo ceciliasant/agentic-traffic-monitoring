@@ -1,0 +1,11 @@
+extra,count
+Incomplete flows_payload for 719_-1.0: missing fields ['precipitation']. Pass the complete,15
+Incomplete flows_payload for 3_1.0: missing fields ['precipitation']. Pass the complete re,13
+Incomplete flows_payload for 716_1.0: missing fields ['precipitation']. Pass the complete ,13
+Incomplete flows_payload for 716_-1.0: missing fields ['precipitation']. Pass the complete,12
+Incomplete flows_payload for 741_1.0: missing fields ['precipitation']. Pass the complete ,11
+Incomplete flows_payload for 741_-1.0: missing fields ['precipitation']. Pass the complete,11
+Incomplete flows_payload for 719_1.0: missing fields ['precipitation']. Pass the complete ,8
+Incomplete flows_payload for 722_-1.0: missing fields ['precipitation']. Pass the complete,7
+Incomplete flows_payload for 718_1.0: missing fields ['precipitation']. Pass the complete ,7
+Incomplete flows_payload for 722_1.0: missing fields ['precipitation']. Pass the complete ,7

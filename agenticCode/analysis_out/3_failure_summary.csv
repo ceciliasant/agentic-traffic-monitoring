@@ -1,0 +1,13 @@
+,Gemma,Qwen
+sessions,169,169
+goose exit code != 0,0,0
+no run summary logged,0,5
+no final Ditto record,0,5
+sessions with missing predictions,52,73
+missing prediction node-hours,92,274
+sessions with incomplete evaluations,58,88
+sessions with wrong check_deviation arguments,0,8
+sessions with wrong baseline_predict payloads,96,15
+sessions with a request slower than 300s,12,0
+sessions with tool errors,91,12
+sessions with no problem at all,42,63

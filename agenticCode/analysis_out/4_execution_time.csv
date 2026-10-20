@@ -1,0 +1,6 @@
+,n,mean,std,median,p90,p95,p99,max,total_hours
+Gemma (all sessions),169.0,363.4,288.0,281.0,370.2,1255.0,1505.2,1815.0,17.1
+"Gemma (typical, no stalled request)",157.0,286.1,40.5,279.0,322.6,352.6,453.4,498.0,12.5
+Qwen (all sessions),169.0,280.4,21.2,281.0,300.0,308.6,334.4,354.0,13.2
+"Qwen (typical, no stalled request)",169.0,280.4,21.2,281.0,300.0,308.6,334.4,354.0,13.2
+Classic (deterministic),169.0,17.6,1.5,17.5,19.3,21.0,22.3,24.2,0.8

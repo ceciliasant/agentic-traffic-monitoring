@@ -1,0 +1,7 @@
+payload issue,count
+wrong_value:flows_24,6
+wrong_value:flows_168,5
+wrong_value:flows_1,4
+wrong_value:precipitation,2
+wrong_value:temperature,2
+invalid_payload,1

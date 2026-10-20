@@ -1,0 +1,7 @@
+model,scenario,input tokens / run,output tokens / run,"input tokens, 5 years (millions)","output tokens, 5 years (millions)",cached share of prompt
+Gemma,observed,1012977,51383,44368.4,2250.6,0.863
+Gemma,runaways removed,1011232,43913,44292.0,1923.4,0.863
+Gemma,output capped at 4096,1012977,43557,44368.4,1907.8,0.863
+Qwen,observed,470362,25588,20601.8,1120.8,0.219
+Qwen,runaways removed,470362,25588,20601.8,1120.8,0.219
+Qwen,output capped at 4096,470362,25017,20601.8,1095.7,0.219

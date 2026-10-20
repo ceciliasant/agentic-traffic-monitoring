@@ -1,0 +1,87 @@
+# Agentic vs classic pipeline
+
+Reference for fidelity = classic run (same models, same data). Ground truth for accuracy = observed flows. Verdict rules are a reference, not ground truth.
+
+## sessions
+
+| metric | value |
+|---|---|
+| agent_sessions | 4 |
+| hours_compared | 4 |
+| repeated_sessions | 0 |
+
+## coverage
+
+| metric | value |
+|---|---|
+| mean_coverage_vs_classic | 0.9792 |
+| sessions_with_full_coverage | 3 |
+| sessions_with_missing_nodes | 1 |
+| sessions_with_extra_nodes | 0 |
+
+## input fidelity
+
+| metric | value |
+|---|---|
+| baseline_predict_calls | 49 |
+| calls_with_wrong_payload | 1 |
+| wrong_payload_rate | 0.0204 |
+| get_flows_wrong_hour | 0 |
+| calls_to_nodes_that_should_not_be_touched | 0 |
+
+## prediction fidelity
+
+| metric | value |
+|---|---|
+| node_hours_compared | 47 |
+| exact_match_rate | 1.0 |
+| mean_abs_diff | 0.0 |
+| max_abs_diff | 0.0 |
+
+## forecast accuracy vs actual
+
+| metric | value |
+|---|---|
+| node_hours_with_actual | 36 |
+| mean_smape_classic | 0.119 |
+| mean_smape_agent | 0.119 |
+| mean_paired_diff_agent_minus_classic | 0.0 |
+| share_agent_worse | 0.0 |
+
+## evaluation fidelity
+
+| metric | value |
+|---|---|
+| sessions_with_evaluation | 3 |
+| mean_eval_coverage_vs_classic | 1.0 |
+| check_deviation_calls | 36 |
+| check_deviation_calls_with_wrong_args | 0 |
+
+## verdicts
+
+| metric | value |
+|---|---|
+| node_level_agreement | 0.75 |
+| node_level_agreement_when_inputs_correct | 0.75 |
+| node_level_cohen_kappa | 0.6211 |
+| overall_verdict_match_rate | 1.0 |
+| summary_counts_match_rate | 0.75 |
+| sessions_without_log_run_summary | 0 |
+| sessions_without_log_final_ditto | 0 |
+
+## failure modes and cost
+
+| metric | value |
+|---|---|
+| tool_errors | 1 |
+| repeated_calls | 0 |
+| unanswered_calls | 0 |
+| mean_tool_calls_agent | 59.75 |
+| mean_tool_calls_classic | 55.0 |
+| mean_duration_s_agent_trace | 247.25 |
+| mean_duration_s_classic | 15.8925 |
+| rate_limit_errors | 0 |
+| delegate_parameter_errors | 37 |
+| sessions_where_coordinator_called_pipeline_tools_directly | 0 |
+| subagents_using_load_instead_of_tools | 0 |
+| delegate_calls | 134 |

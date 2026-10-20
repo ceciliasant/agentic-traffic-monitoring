@@ -1,0 +1,3 @@
+,sessions,finished within 60 min,finished within 10 min,slower than the hourly slot,slowest (min),hourly operation feasible (max < slot)
+Gemma,169,1.0,0.929,0,30.2,True
+Qwen,169,1.0,1.0,0,5.9,True

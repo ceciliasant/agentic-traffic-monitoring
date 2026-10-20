@@ -1,0 +1,13 @@
+model,scenario,provider,API cost per run (USD),"API cost, 5 years (USD)",local cost per run (USD),"local cost, 5 years (USD)",break-even (runs),break-even (years at 1 run/hour),cheaper over 5 years
+Gemma,observed,Qwen,0.0363,1591,0.137,6000,165138,18.85,API
+Gemma,observed,Gemma,0.0355,1554,0.137,6000,169071,19.3,API
+Gemma,runaways removed,Qwen,0.0326,1427,0.137,6000,184163,21.02,API
+Gemma,runaways removed,Gemma,0.0338,1481,0.137,6000,177499,20.26,API
+Gemma,output capped at 4096,Qwen,0.0324,1420,0.137,6000,185070,21.13,API
+Gemma,output capped at 4096,Gemma,0.0338,1479,0.137,6000,177692,20.28,API
+Qwen,observed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
+Qwen,observed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
+Qwen,runaways removed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
+Qwen,runaways removed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
+Qwen,output capped at 4096,Qwen,0.0208,910,0.137,6000,288728,32.96,API
+Qwen,output capped at 4096,Gemma,0.0231,1011,0.137,6000,259823,29.66,API

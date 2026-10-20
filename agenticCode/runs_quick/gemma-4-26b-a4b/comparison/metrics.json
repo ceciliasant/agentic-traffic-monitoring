@@ -1,0 +1,86 @@
+{
+  "sessions": 4,
+  "wall_time_s": {
+    "n": 4.0,
+    "mean": 264.75,
+    "std": 41.6,
+    "min": 207.0,
+    "p50": 275.5,
+    "p90": 297.1,
+    "p95": 299.05,
+    "p99": 300.61,
+    "max": 301.0
+  },
+  "wall_time_total_h": 0.29,
+  "llm_calls_per_session (turns)": {
+    "n": 4.0,
+    "mean": 94.25,
+    "std": 16.58,
+    "min": 70.0,
+    "p50": 100.0,
+    "p90": 105.5,
+    "p95": 106.25,
+    "p99": 106.85,
+    "max": 107.0
+  },
+  "turns_vs_max_150": {
+    "mean_share_of_max": 0.628,
+    "sessions_at_or_over_max": 0
+  },
+  "input_tokens_per_session": {
+    "n": 4.0,
+    "mean": 655224.5,
+    "std": 142430.17,
+    "min": 500240.0,
+    "p50": 637848.0,
+    "p90": 786077.4,
+    "p95": 815519.7,
+    "p99": 839073.54,
+    "max": 844962.0
+  },
+  "output_tokens_per_session": {
+    "n": 4.0,
+    "mean": 39257.0,
+    "std": 12562.65,
+    "min": 20537.0,
+    "p50": 44513.5,
+    "p90": 46714.0,
+    "p95": 47089.0,
+    "p99": 47389.0,
+    "max": 47464.0
+  },
+  "total_input_tokens": 2620898,
+  "total_output_tokens": 157028,
+  "max_prompt_vs_context_24000": {
+    "pct_of_limit_per_session": {
+      "n": 4.0,
+      "mean": 125.23,
+      "std": 38.58,
+      "min": 68.65,
+      "p50": 140.31,
+      "p90": 150.49,
+      "p95": 151.07,
+      "p99": 151.53,
+      "max": 151.65
+    },
+    "sessions_over_80pct": 3,
+    "sessions_over_100pct": 3
+  },
+  "summarize": {
+    "calls_flagged_as_summarize (heuristic)": 0,
+    "sessions_with_summarize": 0
+  },
+  "failures": {
+    "sessions_goose_nonzero_exit": 0,
+    "sessions_at_turn_limit": 0,
+    "llm_requests_failed_or_timed_out": 0,
+    "llm_requests_retried_after_429_503": 74,
+    "llm_retries_total": 345,
+    "max_queue_wait_s": 0.0,
+    "total_queue_wait_s": 0.0,
+    "outputs_truncated_finish_reason_length": 0,
+    "sessions_with_truncated_output": 0,
+    "sessions_with_tool_errors": 1
+  },
+  "usage_reported_by_server_share": 1.0
+}

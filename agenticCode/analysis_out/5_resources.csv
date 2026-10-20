@@ -1,0 +1,43 @@
+Area,Metric,Gemma,Qwen
+LLM requests per session (turns incl. subagents),mean,125.3,91.6
+LLM requests per session (turns incl. subagents),median,123.0,96.0
+LLM requests per session (turns incl. subagents),p90,148.0,100.2
+LLM requests per session (turns incl. subagents),max,241.0,106.0
+input tokens per session,mean,1012976.9,470361.7
+input tokens per session,median,1018923.0,499383.0
+input tokens per session,p90,1349295.6,531513.2
+input tokens per session,max,1942808.0,633934.0
+output tokens per session,mean,51383.2,25588.3
+output tokens per session,median,43057.0,24648.0
+output tokens per session,p90,49891.4,30376.4
+output tokens per session,max,183442.0,42338.0
+output tokens per session excl. responses > 20000,mean,43912.9,25588.3
+output tokens per session excl. responses > 20000,median,42893.0,24648.0
+output tokens per session excl. responses > 20000,p90,47590.8,30376.4
+output tokens per session excl. responses > 20000,max,90447.0,42338.0
+tokens per request,mean input,8098.8,5306.8
+tokens per request,median output,251.0,139.0
+tokens per request,p99 output,3141.0,3837.2
+totals,input tokens,171193098.0,79491123.0
+totals,output tokens,8683759.0,4324425.0
+totals,LLM requests,21182.0,15472.0
+totals,usage reported by the server,0.9979,0.9681
+totals,prompt tokens served from cache (if reported),0.8631,0.2193
+context (limit 24000),largest prompt (tokens),40684.0,28823.0
+context (limit 24000),largest prompt as % of limit,169.5,120.1
+context (limit 24000),requests above 80% of limit,2043.0,343.0
+context (limit 24000),requests above the limit,936.0,55.0
+context (limit 24000),sessions with a request above the limit,168.0,34.0
+summarisation,requests flagged as summarise (heuristic: no tools + 'summar'),0.0,0.0
+summarisation,sessions with a flagged request,0.0,0.0
+turns (max 150),sessions with requests >= max turns,14.0,0.0
+turns (max 150),"longest conversation, approx. turns (max_messages / 2)",97.0,143.0
+errors and stalls,LLM requests failed or errored,44.0,493.0
+errors and stalls,requests retried after 429/503,1007.0,4648.0
+errors and stalls,responses cut off (finish_reason=length),11.0,0.0
+errors and stalls,output tokens in runaway responses,1262476.0,0.0
+errors and stalls,share of all output tokens,0.1454,0.0
+errors and stalls,requests slower than 300s,12.0,0.0
+errors and stalls,mean request latency (s),9.59,33.89
+errors and stalls,MCP tool errors (total),154.0,14.0
+errors and stalls,sessions with an MCP tool error,91.0,12.0

@@ -1,0 +1,3 @@
+model,hour,start_epoch,end_epoch,seconds,goose_exit
+gemma-4-26b-a4b,2024-09-23T00:00:00,1792368255,1792368411,156,0
+gemma-4-26b-a4b,2024-09-23T01:00:00,1792368411,1792368686,275,0

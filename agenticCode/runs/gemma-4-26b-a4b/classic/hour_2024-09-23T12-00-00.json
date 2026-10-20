@@ -1,0 +1,470 @@
+{
+  "hour": "2024-09-23T12:00:00",
+  "run_at": "2026-10-18T00:11:18",
+  "is_simulation": true,
+  "evaluate_timestamp": "2024-09-23T11:00:00",
+  "predict_timestamp": "2024-09-23T12:00:00",
+  "evaluation_expected": true,
+  "nodes": {
+    "arrabida-freixo": [
+      {
+        "node": "741_1.0",
+        "status": "active"
+      },
+      {
+        "node": "742_1.0",
+        "status": "pending"
+      },
+      {
+        "node": "723_-1.0",
+        "status": "pending"
+      },
+      {
+        "node": "722_-1.0",
+        "status": "active"
+      },
+      {
+        "node": "3_-1.0",
+        "status": "active"
+      },
+      {
+        "node": "716_-1.0",
+        "status": "active"
+      },
+      {
+        "node": "719_-1.0",
+        "status": "active"
+      },
+      {
+        "node": "718_-1.0",
+        "status": "active"
+      },
+      {
+        "node": "1236_-1.0",
+        "status": "pending"
+      }
+    ],
+    "freixo-arrabida": [
+      {
+        "node": "1236_1.0",
+        "status": "pending"
+      },
+      {
+        "node": "718_1.0",
+        "status": "active"
+      },
+      {
+        "node": "719_1.0",
+        "status": "active"
+      },
+      {
+        "node": "716_1.0",
+        "status": "active"
+      },
+      {
+        "node": "3_1.0",
+        "status": "active"
+      },
+      {
+        "node": "722_1.0",
+        "status": "active"
+      },
+      {
+        "node": "723_1.0",
+        "status": "pending"
+      },
+      {
+        "node": "742_-1.0",
+        "status": "pending"
+      },
+      {
+        "node": "741_-1.0",
+        "status": "active"
+      }
+    ]
+  },
+  "predictions": {
+    "741_1.0": {
+      "node": "741_1.0",
+      "flows": {
+        "sensor_id": "741",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 2742.0,
+        "flows_24": 3122.0,
+        "flows_1": 3077.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 3052.19,
+      "error": null
+    },
+    "722_-1.0": {
+      "node": "722_-1.0",
+      "flows": {
+        "sensor_id": "722",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4334.0,
+        "flows_24": 3811.0,
+        "flows_1": 4487.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4504.82,
+      "error": null
+    },
+    "3_-1.0": {
+      "node": "3_-1.0",
+      "flows": {
+        "sensor_id": "3",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4885.0,
+        "flows_24": 4040.0,
+        "flows_1": 4784.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 5017.08,
+      "error": null
+    },
+    "716_-1.0": {
+      "node": "716_-1.0",
+      "flows": {
+        "sensor_id": "716",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4397.255851521731,
+        "flows_24": 3671.3443642729353,
+        "flows_1": 4131.587869939927,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4432.33,
+      "error": null
+    },
+    "719_-1.0": {
+      "node": "719_-1.0",
+      "flows": {
+        "sensor_id": "719",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 3787.0,
+        "flows_24": 3060.0,
+        "flows_1": 4013.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 3981.5,
+      "error": null
+    },
+    "718_-1.0": {
+      "node": "718_-1.0",
+      "flows": {
+        "sensor_id": "718",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 3682.0,
+        "flows_24": 3530.0,
+        "flows_1": 3917.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 3883.11,
+      "error": null
+    },
+    "718_1.0": {
+      "node": "718_1.0",
+      "flows": {
+        "sensor_id": "718",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 3809.0,
+        "flows_24": 3619.0,
+        "flows_1": 3949.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 3769.56,
+      "error": null
+    },
+    "719_1.0": {
+      "node": "719_1.0",
+      "flows": {
+        "sensor_id": "719",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4793.0,
+        "flows_24": 3189.0,
+        "flows_1": 4496.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4683.88,
+      "error": null
+    },
+    "716_1.0": {
+      "node": "716_1.0",
+      "flows": {
+        "sensor_id": "716",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4100.491635187124,
+        "flows_24": 3708.238768796478,
+        "flows_1": 4403.998646187727,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4200.95,
+      "error": null
+    },
+    "3_1.0": {
+      "node": "3_1.0",
+      "flows": {
+        "sensor_id": "3",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4289.0,
+        "flows_24": 4009.0,
+        "flows_1": 4458.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4322.38,
+      "error": null
+    },
+    "722_1.0": {
+      "node": "722_1.0",
+      "flows": {
+        "sensor_id": "722",
+        "direction": 1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 4586.0,
+        "flows_24": 4148.0,
+        "flows_1": 4392.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 4469.77,
+      "error": null
+    },
+    "741_-1.0": {
+      "node": "741_-1.0",
+      "flows": {
+        "sensor_id": "741",
+        "direction": -1.0,
+        "timestamp": "2024-09-23T12:00:00",
+        "flows_168": 3545.0,
+        "flows_24": 3869.0,
+        "flows_1": 3825.0,
+        "game_time": null,
+        "temperature": 15.33,
+        "precipitation": 0.07
+      },
+      "lags_missing": false,
+      "status": "logged",
+      "baseline_prediction": 3857.58,
+      "error": null
+    }
+  },
+  "evaluations": {
+    "741_1.0": {
+      "node": "741_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 2926.66,
+      "actual_flow": 3077.0,
+      "smape": 0.0501,
+      "is_deviation": false
+    },
+    "722_-1.0": {
+      "node": "722_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4156.72,
+      "actual_flow": 4487.0,
+      "smape": 0.0764,
+      "is_deviation": false
+    },
+    "3_-1.0": {
+      "node": "3_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4612.74,
+      "actual_flow": 4784.0,
+      "smape": 0.0365,
+      "is_deviation": false
+    },
+    "716_-1.0": {
+      "node": "716_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4072.23,
+      "actual_flow": 4131.587869939927,
+      "smape": 0.0145,
+      "is_deviation": false
+    },
+    "719_-1.0": {
+      "node": "719_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 3780.34,
+      "actual_flow": 4013.0,
+      "smape": 0.0597,
+      "is_deviation": false
+    },
+    "718_-1.0": {
+      "node": "718_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 3740.89,
+      "actual_flow": 3917.0,
+      "smape": 0.046,
+      "is_deviation": false
+    },
+    "718_1.0": {
+      "node": "718_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 3743.5,
+      "actual_flow": 3949.0,
+      "smape": 0.0534,
+      "is_deviation": false
+    },
+    "719_1.0": {
+      "node": "719_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4348.8,
+      "actual_flow": 4496.0,
+      "smape": 0.0333,
+      "is_deviation": false
+    },
+    "716_1.0": {
+      "node": "716_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4091.04,
+      "actual_flow": 4403.998646187727,
+      "smape": 0.0737,
+      "is_deviation": false
+    },
+    "3_1.0": {
+      "node": "3_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4530.74,
+      "actual_flow": 4458.0,
+      "smape": 0.0162,
+      "is_deviation": false
+    },
+    "722_1.0": {
+      "node": "722_1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 4513.2,
+      "actual_flow": 4392.0,
+      "smape": 0.0272,
+      "is_deviation": false
+    },
+    "741_-1.0": {
+      "node": "741_-1.0",
+      "status": "evaluated",
+      "reason": null,
+      "baseline_prediction": 3436.1,
+      "actual_flow": 3825.0,
+      "smape": 0.1071,
+      "is_deviation": false
+    }
+  },
+  "verdicts": {
+    "741_1.0": "within_baseline",
+    "742_1.0": "pending",
+    "723_-1.0": "pending",
+    "722_-1.0": "within_baseline",
+    "3_-1.0": "within_baseline",
+    "716_-1.0": "within_baseline",
+    "719_-1.0": "within_baseline",
+    "718_-1.0": "within_baseline",
+    "1236_-1.0": "pending",
+    "1236_1.0": "pending",
+    "718_1.0": "within_baseline",
+    "719_1.0": "within_baseline",
+    "716_1.0": "within_baseline",
+    "3_1.0": "within_baseline",
+    "722_1.0": "within_baseline",
+    "723_1.0": "pending",
+    "742_-1.0": "pending",
+    "741_-1.0": "within_baseline"
+  },
+  "corridor_verdicts": {
+    "arrabida-freixo": "within_baseline",
+    "freixo-arrabida": "within_baseline"
+  },
+  "overall_verdict": "within_baseline",
+  "summary": {
+    "timestamp": "2024-09-23T11:00:00",
+    "sensors_attempted": 12,
+    "sensors_completed": 12,
+    "sensors_missing_lags": 0,
+    "sensors_errored": 0,
+    "deviations_flagged": 0,
+    "deviations_overridden_as_drift": 0,
+    "corridor_verdict": "within_baseline",
+    "mean_smape": 0.0495,
+    "max_smape": 0.1071,
+    "max_smape_detector": "741_-1.0"
+  },
+  "log_run_summary": {
+    "ok": true,
+    "error": null
+  },
+  "counts": {
+    "active_nodes": 12,
+    "predictions_logged": 12,
+    "predictions_failed": 0,
+    "predictions_lags_missing": 0,
+    "evaluated": 12
+  },
+  "timing": {
+    "predict_s": 10.03,
+    "evaluate_s": 5.65,
+    "total_s": 17.1,
+    "tool_calls": 64
+  },
+  "tool_errors": []
+}

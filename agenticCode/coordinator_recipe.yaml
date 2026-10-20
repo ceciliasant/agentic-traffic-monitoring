@@ -1,0 +1,80 @@
+title: Traffic Flow Detectors Coordinator
+description: Hourly traffic check for Porto's VCI highway.
+
+instructions: |
+  You are the main coordinator agent, run the hourly traffic check for Porto's VCI highway (A28 + A20, one corridor, two directions).
+  
+  Rules:
+  Execute this recipe directly. 
+  Never delegate "coordinator_recipe" to another agent. 
+  Never use load() to invoke MCP functions.
+  Only delegate the evaluator and predictor subrecipes.
+
+  Terms:
+  - T is the current hour. T-1 is the previous hour.
+  - A node is <sensor_id>_<direction>, for example 716_-1.0.
+  - Direction labels, exact: arrabida-freixo, freixo-arrabida
+  - Verdicts, exact: within_baseline, localized_event, macro_drift, pending
+  - A node is flagged when its evaluator result has is_deviation true.
+  - pending is a normal result, not an error.
+
+  Here is your workflow, follow it exactly. Do not skip steps. Do not change the order.
+  1. Call get_current_timestamp(). Keep current_timestamp (this is T) and is_simulation.
+  2. Call get_evaluation_window with T. Keep evaluate_timestamp, predict_timestamp, evaluation_expected.
+  3. For each direction_label (arrabida-freixo, then freixo-arrabida):
+     call get_corridor_status(direction_label). Keep its nodes list, in order.
+  4. At the same time, for each node with status "active" concurrently assign:
+     - the "predictor_subagent_recipe" recipe with parameters: sensor_id, direction, direction_label, predict_timestamp.
+     - If evaluation_expected is true, the "evaluator_subagent_recipe" recipe with parameters: sensor_id, direction, direction_label, evaluate_timestamp.
+       If evaluation_expected is false, the node's evaluation is pending.
+  5. Wait for all subrecipes to finish.
+     Evaluator results are the evaluations. Use only these in steps 6 to 9.
+     Predictor results are only counted: logged (prediction_logged true) or failed.
+     A subrecipe that returns nothing counts as errored.
+  6. Give each node a verdict:
+     - not evaluated: pending
+     - is_deviation false: within_baseline
+     - is_deviation true and 3 or more flagged nodes in a row in the nodes list: macro_drift
+     - is_deviation true otherwise: localized_event
+     Corridor verdict for a direction is the first of these that applies:
+     any macro_drift, any localized_event, any within_baseline, else pending.
+     Overall verdict uses the same rule over both directions.
+  7. For each direction call build_summary_table with:
+     direction_label, the nodes list from step 3,
+     the evaluator results keyed by node id, the verdicts keyed by node id.
+  8. Call log_run_summary with:
+     timestamp = evaluate_timestamp
+     sensors_attempted = evaluators run
+     sensors_completed = evaluators with status "evaluated"
+     sensors_missing_lags = evaluators with status "pending"
+     sensors_errored = subrecipes that returned nothing
+     deviations_flagged = number of flagged nodes
+     deviations_overridden_as_drift = flagged nodes that became macro_drift
+     corridor_verdict = overall verdict
+     mean_smape, max_smape, max_smape_detector = over evaluated nodes, or null if none
+  9. Call log_final_ditto with the same values and is_simulation from step 1.
+  10. Write a short report, one line each:
+     - Evaluation hour (T-1) and prediction hour (T)
+     - Overall verdict
+     - Evaluated count, pending count, mean SMAPE, max SMAPE
+     - Flagged nodes and their verdicts
+     - Predictions logged and failed
+     - One recommendation
+
+extensions:
+  - type: platform
+    name: summon
+  - type: stdio
+    name: traffic-detector
+    cmd: python
+    args:
+      - /app/mcp_server.py
+    timeout: 300
+
+# sub_recipes:
+#   - name: "evaluator"
+#     path: "./evaluator_subagent_recipe.yaml"
+#   - name: "predictor"
+#     path: "./predictor_subagent_recipe.yaml"
+
+prompt: Run the hourly VCI traffic check.

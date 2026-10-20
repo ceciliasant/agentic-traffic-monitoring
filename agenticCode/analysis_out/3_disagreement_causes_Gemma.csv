@@ -1,0 +1,4 @@
+likely_cause,node-hours,share of disagreements
+agent reported no verdict (evaluation or summary missing),765,0.883
+previous-hour prediction differed from classic (different baseline),72,0.083
+different verdict although inputs matched (rule applied differently),29,0.033

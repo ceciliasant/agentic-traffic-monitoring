@@ -1,0 +1,4 @@
+,value
+delegate calls,5629
+sessions where the coordinator called pipeline tools itself,3
+subagent `load` instead of tools,392

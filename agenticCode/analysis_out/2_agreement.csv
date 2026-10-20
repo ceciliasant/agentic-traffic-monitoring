@@ -1,0 +1,28 @@
+Level,Metric,Gemma,Qwen
+Detector (node),rows compared,2028,2028
+Detector (node),raw agreement,0.573,0.7821
+Detector (node),Cohen's kappa,0.0879,0.2121
+Detector (node),rows excluding trivial pending,2016,2016
+Detector (node),raw agreement excluding trivial pending,0.5734,0.7808
+Detector (node),Cohen's kappa excluding trivial pending,0.0768,0.1854
+Detector (node),agent verdict missing (not_reported),765,60
+Detector (node),macro_drift: classic count / recall / precision,0 / None / None,0 / None / None
+Detector (node),localized_event: classic count / recall / precision,73 / 0.4384 / 1.0,73 / 0.6438 / 1.0
+Corridor,rows compared,338,338
+Corridor,raw agreement,0.6479,0.9172
+Corridor,Cohen's kappa,0.3039,0.7188
+Corridor,rows excluding trivial pending,336,336
+Corridor,raw agreement excluding trivial pending,0.6458,0.9167
+Corridor,Cohen's kappa excluding trivial pending,0.2945,0.7092
+Corridor,agent verdict missing (not_reported),0,0
+Corridor,macro_drift: classic count / recall / precision,0 / None / None,0 / None / None
+Corridor,localized_event: classic count / recall / precision,55 / 0.4727 / 1.0,55 / 0.7091 / 1.0
+Network (overall),rows compared,169,169
+Network (overall),raw agreement,0.9763,0.9053
+Network (overall),Cohen's kappa,0.9417,0.7608
+Network (overall),rows excluding trivial pending,168,168
+Network (overall),raw agreement excluding trivial pending,0.9762,0.9048
+Network (overall),Cohen's kappa excluding trivial pending,0.9404,0.7549
+Network (overall),agent verdict missing (not_reported),0,5
+Network (overall),macro_drift: classic count / recall / precision,0 / None / None,0 / None / None
+Network (overall),localized_event: classic count / recall / precision,46 / 0.9565 / 0.9778,46 / 0.7174 / 1.0

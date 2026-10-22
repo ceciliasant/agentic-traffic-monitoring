@@ -1,3 +1,5 @@
 ,mean x classic,median x classic
-Gemma,20.6,16.0
-Qwen,15.9,16.0
+Gemma (subagents) run 1,20.6,16.0
+Gemma (subagents) run 2,21.0,16.6
+Qwen (subagents) run 1,15.9,16.0
+Qwen (subagents) run 2,19.3,16.7

@@ -1,0 +1,8 @@
+payload issue,count
+missing_field:precipitation,119
+missing_field:flows_24,29
+wrong_timestamp,5
+missing_field:flows_1,1
+wrong_value:flows_1,1
+wrong_value:precipitation,1
+wrong_value:temperature,1

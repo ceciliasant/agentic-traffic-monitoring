@@ -1,0 +1,51 @@
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v3.10.1-full
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    command: >
+      mlflow server
+        --host 0.0.0.0
+        --port 5000
+        --backend-store-uri sqlite:////mlflow/mlflow.db
+        --default-artifact-root /mlartifacts
+        --allowed-hosts "mlflow,mlflow:5000,localhost,localhost:5000"
+  
+    volumes:
+      - mlflow_data:/mlflow
+
+  coordinator:
+    build: .
+    container_name: coordinator
+    env_file: .env
+    environment:
+      - RUN_MODE=${RUN_MODE:-production}
+      - TEST_START=${TEST_START:-}
+      - TEST_END=${TEST_END:-}
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://mlflow:5000
+      - OTEL_EXPORTER_OTLP_HEADERS=x-mlflow-experiment-id=0
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=none
+      - OTEL_LOGS_EXPORTER=none
+      - GOOSE_DISABLE_KEYRING=true
+      - GOOSE_MODE=auto
+      - GOOSE_CONTEXT_STRATEGY=summarize
+      - GOOSE_MAX_TURNS=150
+      - GOOSE_DISABLE_SESSION_NAMING=true
+      - GOOSE_PROVIDER=Customopenwebui
+      - GOOSE_MODEL=${GOOSE_MODEL:-}
+      - GOOSE_PREDEFINED_MODELS
+      - RUST_BACKTRACE=full
+      - GOOSE_CONTEXT_LIMIT=24000
+    depends_on:
+      - mlflow
+    volumes:
+      - output_data:/app/output
+      - logs_data:/app/logs\
+
+volumes:
+  mlflow_data:
+  output_data:
+  logs_data:

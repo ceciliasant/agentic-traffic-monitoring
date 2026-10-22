@@ -1,0 +1,5 @@
+verdict_classic,verdict_agent,node-hours
+localized_event,not_reported,2
+localized_event,pending,9
+within_baseline,not_reported,57
+within_baseline,pending,123

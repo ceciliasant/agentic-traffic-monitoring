@@ -1,0 +1,62 @@
+{
+  "sessions": {
+    "agent_sessions": 170,
+    "hours_compared": 169,
+    "repeated_sessions": 1
+  },
+  "coverage": {
+    "mean_coverage_vs_classic": 0.95,
+    "sessions_with_full_coverage": 117,
+    "sessions_with_missing_nodes": 53,
+    "sessions_with_extra_nodes": 0
+  },
+  "input_fidelity": {
+    "baseline_predict_calls": 2103,
+    "calls_with_wrong_payload": 156,
+    "wrong_payload_rate": 0.0742,
+    "get_flows_wrong_hour": 0,
+    "calls_to_nodes_that_should_not_be_touched": 0
+  },
+  "prediction_fidelity": {
+    "node_hours_compared": 1938,
+    "exact_match_rate": 0.999,
+    "mean_abs_diff": 0.5659,
+    "max_abs_diff": 596.7
+  },
+  "forecast_accuracy_vs_actual": {
+    "node_hours_with_actual": 1927,
+    "mean_smape_classic": 0.0644,
+    "mean_smape_agent": 0.0645,
+    "mean_paired_diff_agent_minus_classic": 0.0001,
+    "share_agent_worse": 0.001
+  },
+  "evaluation_fidelity": {
+    "sessions_with_evaluation": 169,
+    "mean_eval_coverage_vs_classic": 0.9813,
+    "check_deviation_calls": 2011,
+    "check_deviation_calls_with_wrong_args": 0
+  },
+  "verdicts": {
+    "node_level_agreement": 0.5897,
+    "node_level_agreement_when_inputs_correct": 0.5913,
+    "node_level_cohen_kappa": 0.1039,
+    "overall_verdict_match_rate": 0.9765,
+    "summary_counts_match_rate": 0.8765,
+    "sessions_without_log_run_summary": 3,
+    "sessions_without_log_final_ditto": 3
+  },
+  "failure_modes_and_cost": {
+    "tool_errors": 158,
+    "repeated_calls": 5,
+    "unanswered_calls": 0,
+    "mean_tool_calls_agent": 67.0647,
+    "mean_tool_calls_classic": 63.7882,
+    "mean_duration_s_agent_trace": 350.2294,
+    "mean_duration_s_classic": 17.6482,
+    "rate_limit_errors": 0,
+    "delegate_parameter_errors": 775,
+    "sessions_where_coordinator_called_pipeline_tools_directly": 0,
+    "subagents_using_load_instead_of_tools": 184,
+    "delegate_calls": 5816
+  }
+}

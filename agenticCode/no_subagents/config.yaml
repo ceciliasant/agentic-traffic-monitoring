@@ -1,0 +1,37 @@
+# config.yaml
+# docs: https://goose-docs.ai/docs/guides/config-files/
+
+GOOSE_MODE: auto
+GOOSE_DISABLE_KEYRING: true
+
+extensions:
+  developer:
+      enabled: false
+      name: developer
+      type: builtin
+  traffic-detector:
+    bundled: false
+    name: "traffic-detector"
+    type: "stdio"
+    enabled: true
+    cmd: "python"
+    args: 
+      - "/app/mcp_server.py"
+    env_keys:
+      - VCI_HISTORIC_DITTO_URL
+      - PREDICTION_THING_PREFIX
+      - USER_DITTO
+      - PASS_DITTO
+      - TOKEN_URL
+      - CLIENT_ID
+      - ANOMALY_THRESHOLD
+      - MLFLOW_TRACKING_URI
+      - SIMULATION_START
+      - TEST_START
+      - TEST_END
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_DEFAULT_REGION
+      - AWS_ENDPOINT_URL
+      - AWS_BUCKET_NAME
+

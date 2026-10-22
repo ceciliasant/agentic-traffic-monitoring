@@ -1,0 +1,12 @@
+verdict_classic,verdict_agent,node-hours
+localized_event,not_reported,35
+within_baseline,",'741_1.0':",1
+within_baseline,not_reported,761
+within_baseline,pending,20
+within_baseline,"within_baseline','3_-1.0':",1
+within_baseline,"within_baseline','718_-1.0':",1
+within_baseline,"within_baseline','722_-1.0':",9
+within_baseline,"within_baseline','722_1.0':",1
+within_baseline,"within_baseline','723_-1.0':",1
+within_baseline,"within_baseline','723_1.0':",1
+within_baseline,"within_baseline','742_1.0':",1

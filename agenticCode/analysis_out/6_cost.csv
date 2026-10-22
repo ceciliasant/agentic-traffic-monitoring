@@ -1,13 +1,25 @@
 model,scenario,provider,API cost per run (USD),"API cost, 5 years (USD)",local cost per run (USD),"local cost, 5 years (USD)",break-even (runs),break-even (years at 1 run/hour),cheaper over 5 years
-Gemma,observed,Qwen,0.0363,1591,0.137,6000,165138,18.85,API
-Gemma,observed,Gemma,0.0355,1554,0.137,6000,169071,19.3,API
-Gemma,runaways removed,Qwen,0.0326,1427,0.137,6000,184163,21.02,API
-Gemma,runaways removed,Gemma,0.0338,1481,0.137,6000,177499,20.26,API
-Gemma,output capped at 4096,Qwen,0.0324,1420,0.137,6000,185070,21.13,API
-Gemma,output capped at 4096,Gemma,0.0338,1479,0.137,6000,177692,20.28,API
-Qwen,observed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
-Qwen,observed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
-Qwen,runaways removed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
-Qwen,runaways removed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
-Qwen,output capped at 4096,Qwen,0.0208,910,0.137,6000,288728,32.96,API
-Qwen,output capped at 4096,Gemma,0.0231,1011,0.137,6000,259823,29.66,API
+Gemma (subagents) run 1,observed,Qwen,0.0363,1591,0.137,6000,165138,18.85,API
+Gemma (subagents) run 1,observed,Gemma,0.0355,1554,0.137,6000,169071,19.3,API
+Gemma (subagents) run 1,runaways removed,Qwen,0.0326,1427,0.137,6000,184163,21.02,API
+Gemma (subagents) run 1,runaways removed,Gemma,0.0338,1481,0.137,6000,177499,20.26,API
+Gemma (subagents) run 1,output capped at 4096,Qwen,0.0324,1420,0.137,6000,185070,21.13,API
+Gemma (subagents) run 1,output capped at 4096,Gemma,0.0338,1479,0.137,6000,177692,20.28,API
+Gemma (subagents) run 2,observed,Qwen,0.0363,1590,0.137,6000,165320,18.87,API
+Gemma (subagents) run 2,observed,Gemma,0.0356,1560,0.137,6000,168515,19.24,API
+Gemma (subagents) run 2,runaways removed,Qwen,0.0326,1428,0.137,6000,183970,21.0,API
+Gemma (subagents) run 2,runaways removed,Gemma,0.034,1487,0.137,6000,176694,20.17,API
+Gemma (subagents) run 2,output capped at 4096,Qwen,0.0324,1420,0.137,6000,185130,21.13,API
+Gemma (subagents) run 2,output capped at 4096,Gemma,0.0339,1485,0.137,6000,177011,20.21,API
+Qwen (subagents) run 1,observed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
+Qwen (subagents) run 1,observed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
+Qwen (subagents) run 1,runaways removed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
+Qwen (subagents) run 1,runaways removed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
+Qwen (subagents) run 1,output capped at 4096,Qwen,0.0208,910,0.137,6000,288728,32.96,API
+Qwen (subagents) run 1,output capped at 4096,Gemma,0.0231,1011,0.137,6000,259823,29.66,API
+Qwen (subagents) run 2,observed,Qwen,0.0219,958,0.137,6000,274257,31.31,API
+Qwen (subagents) run 2,observed,Gemma,0.0245,1075,0.137,6000,244564,27.92,API
+Qwen (subagents) run 2,runaways removed,Qwen,0.0219,958,0.137,6000,274257,31.31,API
+Qwen (subagents) run 2,runaways removed,Gemma,0.0245,1075,0.137,6000,244564,27.92,API
+Qwen (subagents) run 2,output capped at 4096,Qwen,0.0216,944,0.137,6000,278259,31.76,API
+Qwen (subagents) run 2,output capped at 4096,Gemma,0.0244,1069,0.137,6000,245952,28.08,API

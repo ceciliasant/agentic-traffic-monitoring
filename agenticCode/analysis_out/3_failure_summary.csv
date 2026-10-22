@@ -1,13 +1,13 @@
-,Gemma,Qwen
-sessions,169,169
-goose exit code != 0,0,0
-no run summary logged,0,5
-no final Ditto record,0,5
-sessions with missing predictions,52,73
-missing prediction node-hours,92,274
-sessions with incomplete evaluations,58,88
-sessions with wrong check_deviation arguments,0,8
-sessions with wrong baseline_predict payloads,96,15
-sessions with a request slower than 300s,12,0
-sessions with tool errors,91,12
-sessions with no problem at all,42,63
+,Gemma (subagents) run 1,Gemma (subagents) run 2,Qwen (subagents) run 1,Qwen (subagents) run 2
+sessions,169,169,169,169
+goose exit code != 0,0,0,0,0
+no run summary logged,0,2,5,5
+no final Ditto record,0,2,5,5
+sessions with missing predictions,52,52,73,43
+missing prediction node-hours,92,90,274,148
+sessions with incomplete evaluations,58,16,88,38
+sessions with wrong check_deviation arguments,0,0,8,3
+sessions with wrong baseline_predict payloads,96,101,15,9
+sessions with a request slower than 300s,12,13,0,0
+sessions with tool errors,91,102,12,8
+sessions with no problem at all,42,50,63,114

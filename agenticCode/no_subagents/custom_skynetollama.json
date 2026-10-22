@@ -1,0 +1,36 @@
+{
+  "name": "Customopenwebui",
+  "engine": "openai",
+  "display_name": "Customopenwebui",
+  "description": "Custom openwebui provider (openai compatible API)",
+  "api_key_env": "OPENWEBUI_API_KEY",
+  "base_url": "https://skynet.av.it.pt/openai/chat/completions",
+  "models": [
+    {
+      "name": "gemma-4-26b-a4b",
+      "context_limit": 24000,
+      "input_token_cost": null,
+      "output_token_cost": null,
+      "currency": null,
+      "supports_cache_control": null
+    },
+    {
+      "name": "qwen3.8-27b",
+      "context_limit": 24000,
+      "input_token_cost": null,
+      "output_token_cost": null,
+      "currency": null,
+      "supports_cache_control": null
+    }
+  ],
+  "headers": null,
+  "timeout_seconds": null,
+  "supports_streaming": true,
+  "requires_auth": true,
+  "catalog_provider_id": null,
+  "base_path": null,
+  "env_vars": null,
+  "dynamic_models": null,
+  "skip_canonical_filtering": false,
+  "fast_model": null
+}

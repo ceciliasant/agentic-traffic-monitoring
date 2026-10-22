@@ -1,0 +1,8 @@
+extra,count
+Prediction computed but could not be persisted to historic Ditto: ,2
+timed out,2
+Prediction lookup failed: ,1
+month must be in 1..12: 2024-00-26T02:00:00,1
+flows_payload is not valid JSON: Expecting value: line 1 column 1 (char 0),1
+"Prediction failed for 741_1.0: NaN features: ['Avg_Temperature', 'Avg_Precipitation']",1
+Could not fetch actual flow for 722_1.0 at 2024-09-29T22:00:00: ,1

@@ -1,0 +1,47 @@
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v3.10.1-full
+    container_name: mlflow_server
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow_data:/mlruns
+      - mlflow_artifacts:/mlartifacts
+    command: > 
+      mlflow server 
+      --host 0.0.0.0 
+      --port 5000
+      --backend-store-uri /mlruns 
+      --default-artifact-root /mlartifacts
+      --allowed-hosts "*"
+
+    networks:
+      - ml-network
+
+  training:
+    build: 
+      context: . 
+      dockerfile: Dockerfile
+    container_name: training
+    depends_on:
+      - mlflow
+    volumes:
+      - ./data:/app/data
+      - ./data/weather:/app/data/weather
+      - ./output:/app/output
+      - ./models:/app/models
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow_server:5000
+      - DATA_DIR=/app/data
+      - OUTPUT_DIR=/app/output
+    restart: on-failure
+    networks:
+      - ml-network
+
+volumes:
+  mlflow_data:
+  mlflow_artifacts:
+
+networks:
+  ml-network: 
+    driver: bridge

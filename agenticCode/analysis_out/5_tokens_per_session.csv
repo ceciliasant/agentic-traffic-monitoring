@@ -1,0 +1,17 @@
+,Gemma (subagents) run 1,Gemma (subagents) run 2,Gemma (no subagents) run,Qwen (subagents) run 1,Qwen (subagents) run 2,Qwen (no subagents) run
+requests / session (mean),125.0,124.0,148.0,92.0,98.0,46.0
+"input tokens / session, mean",1012977.0,1021277.0,1820241.0,470362.0,499074.0,582668.0
+"input tokens / session, median",1018923.0,1000812.0,1844833.0,499383.0,509486.0,538930.0
+"input tokens / session, p90",1349296.0,1444805.0,1888430.0,531513.0,536311.0,874173.0
+"input tokens / session, max",1942808.0,1676950.0,1927619.0,633934.0,649193.0,1309275.0
+"output tokens / session, mean",51383.0,51163.0,39880.0,25588.0,26054.0,51263.0
+"output tokens / session, median",43057.0,44574.0,38692.0,24648.0,24338.0,48253.0
+"output tokens / session, p90",49891.0,50823.0,42575.0,30376.0,30012.0,85485.0
+"output tokens / session, max",183442.0,205814.0,150949.0,42338.0,84922.0,150990.0
+"input tokens / request, mean",8099.0,8232.0,12313.0,5307.0,5383.0,12678.0
+"output tokens / request, median",251.0,250.0,149.0,139.0,133.0,290.0
+input tokens / active node (mean session / 12),84415.0,85106.0,151687.0,39197.0,41589.0,48556.0
+stored predictions,1930.0,1938.0,1570.0,1751.0,1879.0,2006.0
+input tokens / stored prediction,88701.0,89059.0,195937.0,45398.0,44887.0,49088.0
+output tokens / stored prediction,4499.0,4462.0,4293.0,2470.0,2343.0,4319.0
+cached share of input tokens,0.863,0.865,0.971,0.219,0.206,0.93

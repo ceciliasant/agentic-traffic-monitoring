@@ -3,8 +3,12 @@ Gemma (subagents) run 1 (all sessions),169.0,363.4,288.0,281.0,370.2,1255.0,1505
 "Gemma (subagents) run 1 (typical, no stalled request)",157.0,286.1,40.5,279.0,322.6,352.6,453.4,498.0,12.5
 Gemma (subagents) run 2 (all sessions),169.0,370.5,312.4,290.0,361.2,1158.2,1705.2,2508.0,17.4
 "Gemma (subagents) run 2 (typical, no stalled request)",156.0,289.1,33.1,286.5,332.5,346.0,372.8,406.0,12.5
+Gemma (no subagents) run (all sessions),169.0,648.9,2714.9,347.0,384.4,437.6,5217.6,34657.0,30.5
+"Gemma (no subagents) run (typical, no stalled request)",163.0,361.2,171.6,346.0,374.6,389.9,519.1,2500.0,16.4
 Qwen (subagents) run 1 (all sessions),169.0,280.4,21.2,281.0,300.0,308.6,334.4,354.0,13.2
 "Qwen (subagents) run 1 (typical, no stalled request)",169.0,280.4,21.2,281.0,300.0,308.6,334.4,354.0,13.2
 Qwen (subagents) run 2 (all sessions),169.0,341.5,140.7,292.0,443.8,572.0,996.4,1315.0,16.0
 "Qwen (subagents) run 2 (typical, no stalled request)",169.0,341.5,140.7,292.0,443.8,572.0,996.4,1315.0,16.0
+Qwen (no subagents) run (all sessions),169.0,427.8,208.0,399.0,710.8,942.6,1125.5,1178.0,20.1
+"Qwen (no subagents) run (typical, no stalled request)",168.0,426.2,207.5,398.5,687.9,943.4,1125.9,1178.0,19.9
 Classic (deterministic),169.0,17.6,1.5,17.5,19.3,21.0,22.3,24.2,0.8

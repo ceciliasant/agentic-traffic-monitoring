@@ -1,5 +1,7 @@
 ,mean x classic,median x classic
 Gemma (subagents) run 1,20.6,16.0
 Gemma (subagents) run 2,21.0,16.6
+Gemma (no subagents) run,36.8,19.8
 Qwen (subagents) run 1,15.9,16.0
 Qwen (subagents) run 2,19.3,16.7
+Qwen (no subagents) run,24.2,22.8

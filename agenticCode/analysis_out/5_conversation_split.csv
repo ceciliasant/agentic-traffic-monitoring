@@ -1,0 +1,10 @@
+,Gemma (subagents) run 1,Gemma (subagents) run 2,Gemma (no subagents) run,Qwen (subagents) run 1,Qwen (subagents) run 2,Qwen (no subagents) run
+requests,21182.0,20981.0,24988.0,15472.0,16601.0,7768.0
+requests in long conversations,5386.0,5351.0,18654.0,750.0,786.0,4635.0
+requests in short conversations,15796.0,15630.0,6334.0,14722.0,15815.0,3133.0
+"over 24000 tokens, long conversations",936.0,957.0,0.0,55.0,88.0,0.0
+"over 24000 tokens, short conversations",0.0,0.0,0.0,0.0,0.0,0.0
+"largest prompt, long conversations",40684.0,44806.0,19252.0,28823.0,45607.0,19315.0
+"largest prompt, short conversations",11548.0,12385.0,12963.0,9081.0,9582.0,19294.0
+requests flagged as summarisation,0.0,0.0,498.0,0.0,47.0,338.0
+sessions with >= max turns requests,14.0,17.0,164.0,0.0,1.0,0.0

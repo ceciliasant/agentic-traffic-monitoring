@@ -1,0 +1,7 @@
+extra,count
+Prediction computed but could not be persisted to historic Ditto: ,2
+Could not fetch actual flow for 3_1.0 at 2024-09-25T18:00:00: ,1
+Prediction lookup failed: ,1
+"Prediction failed for 722_-1.0: NaN features: ['Avg_Temperature', 'Avg_Precipitation']",1
+"Unknown datetime string format, unable to parse: 2024-09-29T03:0 match",1
+"Prediction failed for 716_-1.0: NaN features: ['Avg_Temperature', 'Avg_Precipitation']",1

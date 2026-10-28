@@ -1,0 +1,87 @@
+# Agentic vs classic pipeline
+
+Reference for fidelity = classic run (same models, same data). Ground truth for accuracy = observed flows. Verdict rules are a reference, not ground truth.
+
+## sessions
+
+| metric | value |
+|---|---|
+| agent_sessions | 169 |
+| hours_compared | 169 |
+| repeated_sessions | 0 |
+
+## coverage
+
+| metric | value |
+|---|---|
+| mean_coverage_vs_classic | 0.9946 |
+| sessions_with_full_coverage | 159 |
+| sessions_with_missing_nodes | 10 |
+| sessions_with_extra_nodes | 0 |
+
+## input fidelity
+
+| metric | value |
+|---|---|
+| baseline_predict_calls | 2321 |
+| calls_with_wrong_payload | 90 |
+| wrong_payload_rate | 0.0388 |
+| get_flows_wrong_hour | 1 |
+| calls_to_nodes_that_should_not_be_touched | 0 |
+
+## prediction fidelity
+
+| metric | value |
+|---|---|
+| node_hours_compared | 2006 |
+| exact_match_rate | 0.999 |
+| mean_abs_diff | 0.2812 |
+| max_abs_diff | 337.52 |
+
+## forecast accuracy vs actual
+
+| metric | value |
+|---|---|
+| node_hours_with_actual | 1995 |
+| mean_smape_classic | 0.0649 |
+| mean_smape_agent | 0.0649 |
+| mean_paired_diff_agent_minus_classic | 0.0 |
+| share_agent_worse | 0.0005 |
+
+## evaluation fidelity
+
+| metric | value |
+|---|---|
+| sessions_with_evaluation | 168 |
+| mean_eval_coverage_vs_classic | 0.9871 |
+| check_deviation_calls | 2277 |
+| check_deviation_calls_with_wrong_args | 2 |
+
+## verdicts
+
+| metric | value |
+|---|---|
+| node_level_agreement | 0.9827 |
+| node_level_agreement_when_inputs_correct | 0.993 |
+| node_level_cohen_kappa | 0.8216 |
+| overall_verdict_match_rate | 0.9822 |
+| summary_counts_match_rate | 0.9172 |
+| sessions_without_log_run_summary | 2 |
+| sessions_without_log_final_ditto | 2 |
+
+## failure modes and cost
+
+| metric | value |
+|---|---|
+| tool_errors | 7 |
+| repeated_calls | 1489 |
+| unanswered_calls | 0 |
+| mean_tool_calls_agent | 77.8107 |
+| mean_tool_calls_classic | 63.787 |
+| mean_duration_s_agent_trace | 404.0 |
+| mean_duration_s_classic | 17.6499 |
+| rate_limit_errors | 0 |
+| delegate_parameter_errors | 0 |
+| sessions_where_coordinator_called_pipeline_tools_directly | 169 |
+| subagents_using_load_instead_of_tools | 0 |
+| delegate_calls | 0 |

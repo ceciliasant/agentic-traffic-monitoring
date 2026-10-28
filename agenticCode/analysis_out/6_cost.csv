@@ -11,6 +11,12 @@ Gemma (subagents) run 2,runaways removed,Qwen,0.0326,1428,0.137,6000,183970,21.0
 Gemma (subagents) run 2,runaways removed,Gemma,0.034,1487,0.137,6000,176694,20.17,API
 Gemma (subagents) run 2,output capped at 4096,Qwen,0.0324,1420,0.137,6000,185130,21.13,API
 Gemma (subagents) run 2,output capped at 4096,Gemma,0.0339,1485,0.137,6000,177011,20.21,API
+Gemma (no subagents) run,observed,Qwen,0.0369,1616,0.137,6000,162598,18.56,API
+Gemma (no subagents) run,observed,Gemma,0.0481,2107,0.137,6000,124732,14.24,API
+Gemma (no subagents) run,runaways removed,Qwen,0.0362,1586,0.137,6000,165739,18.92,API
+Gemma (no subagents) run,runaways removed,Gemma,0.0478,2093,0.137,6000,125542,14.33,API
+Gemma (no subagents) run,output capped at 4096,Qwen,0.0361,1580,0.137,6000,166329,18.99,API
+Gemma (no subagents) run,output capped at 4096,Gemma,0.0477,2091,0.137,6000,125684,14.35,API
 Qwen (subagents) run 1,observed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
 Qwen (subagents) run 1,observed,Gemma,0.0232,1017,0.137,6000,258415,29.5,API
 Qwen (subagents) run 1,runaways removed,Qwen,0.0211,923,0.137,6000,284809,32.51,API
@@ -23,3 +29,9 @@ Qwen (subagents) run 2,runaways removed,Qwen,0.0219,958,0.137,6000,274257,31.31,
 Qwen (subagents) run 2,runaways removed,Gemma,0.0245,1075,0.137,6000,244564,27.92,API
 Qwen (subagents) run 2,output capped at 4096,Qwen,0.0216,944,0.137,6000,278259,31.76,API
 Qwen (subagents) run 2,output capped at 4096,Gemma,0.0244,1069,0.137,6000,245952,28.08,API
+Qwen (no subagents) run,observed,Qwen,0.0313,1372,0.137,6000,191556,21.87,API
+Qwen (no subagents) run,observed,Gemma,0.0244,1067,0.137,6000,246233,28.11,API
+Qwen (no subagents) run,runaways removed,Qwen,0.0287,1259,0.137,6000,208818,23.84,API
+Qwen (no subagents) run,runaways removed,Gemma,0.0232,1016,0.137,6000,258762,29.54,API
+Qwen (no subagents) run,output capped at 4096,Qwen,0.02,875,0.137,6000,300432,34.3,API
+Qwen (no subagents) run,output capped at 4096,Gemma,0.0194,849,0.137,6000,309715,35.36,API

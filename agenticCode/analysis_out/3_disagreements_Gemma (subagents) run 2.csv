@@ -25,17 +25,14 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-23T04:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),381.53,381.53,421.0
 2024-09-23T07:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3561.1,3561.1,3480.0
 2024-09-23T07:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3530.94,3530.94,3498.0
-2024-09-23T07:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),4274.23,4274.23,4641.0
 2024-09-23T07:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4727.6,4727.6,4427.0
 2024-09-23T07:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4338.07,4338.07,3991.0
 2024-09-23T07:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4857.28,4857.28,4901.064288968712
 2024-09-23T07:00:00,3_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),6416.36,6416.36,6573.0
 2024-09-23T07:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),5522.46,5522.46,5670.0
 2024-09-23T07:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3973.07,3973.07,4020.0
-2024-09-23T10:00:00,741_1.0,within_baseline,"within_baseline','3_-1.0':",different verdict although inputs matched (rule applied differently),2999.17,2999.17,2902.0
 2024-09-23T10:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4215.26,4215.26,4358.0
 2024-09-23T10:00:00,3_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4369.54,4369.54,4489.0
-2024-09-23T10:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),4055.77,4055.77,4158.0
 2024-09-23T11:00:00,722_-1.0,within_baseline,pending,different verdict although inputs matched (rule applied differently),4156.72,4156.72,4487.0
 2024-09-23T11:00:00,719_1.0,within_baseline,pending,different verdict although inputs matched (rule applied differently),4348.8,4348.8,4496.0
 2024-09-23T11:00:00,741_-1.0,within_baseline,pending,different verdict although inputs matched (rule applied differently),3436.1,3436.1,3825.0
@@ -52,8 +49,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-23T12:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4469.77,4469.77,4776.0
 2024-09-23T12:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3857.58,3857.58,3857.0
 2024-09-23T14:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4437.8,4437.8,4290.0
-2024-09-23T14:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),4687.84,4687.84,4968.0
-2024-09-23T14:00:00,719_1.0,within_baseline,"within_baseline','722_1.0':",different verdict although inputs matched (rule applied differently),4543.0,4543.0,4609.0
 2024-09-23T14:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),5175.04,5175.04,5131.0
 2024-09-23T16:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4143.33,4143.33,4209.0
 2024-09-23T16:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4047.06,,4484.0
@@ -271,7 +266,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-25T07:00:00,3_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),6263.75,6263.75,6301.0
 2024-09-25T07:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),5555.27,5555.27,5497.0
 2024-09-25T07:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3780.67,3780.67,3756.0
-2024-09-25T11:00:00,741_1.0,within_baseline,"within_baseline','742_1.0':",different verdict although inputs matched (rule applied differently),2759.51,2759.51,2581.0
 2024-09-25T11:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3332.0,3332.0,3268.0
 2024-09-25T11:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4204.73,4204.73,4343.0
 2024-09-25T11:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4369.49,4369.49,4338.027493036775
@@ -380,7 +374,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-26T04:00:00,3_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),277.95,277.95,325.0
 2024-09-26T06:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1981.01,1981.01,2054.0
 2024-09-26T06:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1016.91,1016.91,996.0
-2024-09-26T06:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),4346.96,4346.96,4499.0
 2024-09-26T06:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1668.48,1668.48,1636.0
 2024-09-26T06:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3958.62,3958.62,4062.0
 2024-09-26T06:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1720.31,1720.31,1653.7605601201824
@@ -401,7 +394,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-26T08:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4205.55,4205.55,4194.0
 2024-09-26T09:00:00,741_1.0,localized_event,not_reported,agent reported no verdict (evaluation or summary missing),2630.17,2630.17,2568.0
 2024-09-26T09:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4330.08,4330.08,3808.0
-2024-09-26T09:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),4050.31,4050.31,4536.0
 2024-09-26T09:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3982.59,3982.59,3999.0
 2024-09-26T09:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4321.09,4321.09,3920.0
 2024-09-26T09:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4674.46,4674.46,4877.421929062552
@@ -421,7 +413,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-26T14:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),5164.6,5164.6,5288.0
 2024-09-26T14:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4024.32,4024.32,4098.0
 2024-09-26T15:00:00,722_1.0,within_baseline,pending,different verdict although inputs matched (rule applied differently),4829.06,4829.06,5152.0
-2024-09-26T17:00:00,722_1.0,within_baseline,"within_baseline','723_1.0':",different verdict although inputs matched (rule applied differently),4615.56,4615.56,4730.0
 2024-09-26T19:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3316.11,3316.11,3689.0
 2024-09-26T19:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2400.81,2400.81,2426.0
 2024-09-26T19:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4277.49,4277.49,3949.740844287408
@@ -429,7 +420,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-26T19:00:00,722_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3791.6,3791.6,4293.0
 2024-09-26T19:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3875.81,3875.81,4182.0
 2024-09-26T20:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2360.22,2360.22,2478.0
-2024-09-26T20:00:00,722_-1.0,within_baseline,"within_baseline','723_-1.0':",different verdict although inputs matched (rule applied differently),3852.54,3852.54,3992.0
 2024-09-26T20:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3045.1,3045.1,3088.0
 2024-09-26T20:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2128.33,2128.33,2098.0
 2024-09-26T20:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3194.51,3194.51,2961.4317561363123
@@ -461,7 +451,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-26T23:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1791.47,1791.47,1911.0
 2024-09-27T00:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),829.61,829.61,713.0
 2024-09-27T00:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1304.3,1304.3,1263.0
-2024-09-27T00:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),258.6,258.6,248.0
 2024-09-27T00:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),874.22,,851.0
 2024-09-27T00:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),293.46,293.46,267.0
 2024-09-27T00:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1012.13,1012.13,995.35726400744
@@ -672,9 +661,7 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-29T01:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1031.45,1031.45,1022.0
 2024-09-29T02:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),661.86,661.86,733.0
 2024-09-29T02:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),852.03,852.03,785.0
-2024-09-29T02:00:00,3_-1.0,within_baseline,",'741_1.0':",different verdict although inputs matched (rule applied differently),1058.69,1058.69,1168.0
-2024-09-29T02:00:00,716_-1.0,within_baseline,"within_baseline','718_-1.0':",different verdict although inputs matched (rule applied differently),849.25,849.25,919.8827883143484
-2024-09-29T02:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),445.17,445.17,428.0
+2024-09-29T02:00:00,3_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1058.69,1058.69,1168.0
 2024-09-29T02:00:00,718_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),740.52,740.52,811.0
 2024-09-29T02:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),725.14,725.14,935.0
 2024-09-29T02:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),472.4,472.4,452.0
@@ -786,7 +773,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-29T17:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4331.73,4331.73,4486.0
 2024-09-29T18:00:00,741_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3419.32,3419.32,3327.0
 2024-09-29T18:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4616.13,4616.13,4441.0
-2024-09-29T18:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),3281.09,3281.09,3283.0
 2024-09-29T18:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4273.93,4273.93,3624.0
 2024-09-29T18:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3916.99,3916.99,4332.0
 2024-09-29T18:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),3599.06,3599.06,3515.678885531768
@@ -807,7 +793,6 @@ hour,node,verdict_classic,verdict_agent,likely_cause,classic_prediction,agent_pr
 2024-09-29T19:00:00,741_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),4129.96,4129.96,4164.0
 2024-09-29T21:00:00,722_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2464.3,2464.3,2686.0
 2024-09-29T21:00:00,3_-1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2744.71,2744.71,3103.0
-2024-09-29T21:00:00,719_-1.0,within_baseline,"within_baseline','722_-1.0':",different verdict although inputs matched (rule applied differently),1405.43,1405.43,1376.0
 2024-09-29T21:00:00,718_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2601.95,2601.95,2752.0
 2024-09-29T21:00:00,719_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),1664.85,,1471.0
 2024-09-29T21:00:00,716_1.0,within_baseline,not_reported,agent reported no verdict (evaluation or summary missing),2445.93,2445.93,2358.9641892713857

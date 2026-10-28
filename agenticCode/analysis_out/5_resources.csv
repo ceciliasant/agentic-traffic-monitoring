@@ -1,43 +1,43 @@
-Area,Metric,Gemma (subagents) run 1,Gemma (subagents) run 2,Qwen (subagents) run 1,Qwen (subagents) run 2
-LLM requests per session (turns incl. subagents),mean,125.3,124.1,91.6,98.2
-LLM requests per session (turns incl. subagents),median,123.0,123.0,96.0,99.0
-LLM requests per session (turns incl. subagents),p90,148.0,149.2,100.2,104.2
-LLM requests per session (turns incl. subagents),max,241.0,160.0,106.0,157.0
-input tokens per session,mean,1012976.9,1021276.6,470361.7,499073.7
-input tokens per session,median,1018923.0,1000812.0,499383.0,509486.0
-input tokens per session,p90,1349295.6,1444805.2,531513.2,536311.0
-input tokens per session,max,1942808.0,1676950.0,633934.0,649193.0
-output tokens per session,mean,51383.2,51163.0,25588.3,26054.0
-output tokens per session,median,43057.0,44574.0,24648.0,24338.0
-output tokens per session,p90,49891.4,50823.2,30376.4,30012.0
-output tokens per session,max,183442.0,205814.0,42338.0,84922.0
-output tokens per session excl. responses > 20000,mean,43912.9,43836.0,25588.3,26054.0
-output tokens per session excl. responses > 20000,median,42893.0,44133.0,24648.0,24338.0
-output tokens per session excl. responses > 20000,p90,47590.8,48523.0,30376.4,30012.0
-output tokens per session excl. responses > 20000,max,90447.0,57241.0,42338.0,84922.0
-tokens per request,mean input,8098.8,8232.2,5306.8,5383.2
-tokens per request,median output,251.0,250.0,139.0,133.0
-tokens per request,p99 output,3141.0,3224.8,3837.2,3922.3
-totals,input tokens,171193098.0,172595745.0,79491123.0,84343460.0
-totals,output tokens,8683759.0,8646543.0,4324425.0,4403121.0
-totals,LLM requests,21182.0,20981.0,15472.0,16601.0
-totals,usage reported by the server,0.9979,0.9993,0.9681,0.9438
-totals,prompt tokens served from cache (if reported),0.8631,0.8647,0.2193,0.206
-context (limit 24000),largest prompt (tokens),40684.0,44806.0,28823.0,45607.0
-context (limit 24000),largest prompt as % of limit,169.5,186.7,120.1,190.0
-context (limit 24000),requests above 80% of limit,2043.0,2160.0,343.0,364.0
-context (limit 24000),requests above the limit,936.0,957.0,55.0,88.0
-context (limit 24000),sessions with a request above the limit,168.0,166.0,34.0,43.0
-summarisation,requests flagged as summarise (heuristic: no tools + 'summar'),0.0,0.0,0.0,47.0
-summarisation,sessions with a flagged request,0.0,0.0,0.0,2.0
-turns (max 150),sessions with requests >= max turns,14.0,17.0,0.0,1.0
-turns (max 150),"longest conversation, approx. turns (max_messages / 2)",97.0,96.5,143.0,164.5
-errors and stalls,LLM requests failed or errored,44.0,14.0,493.0,933.0
-errors and stalls,requests retried after 429/503,1007.0,886.0,4648.0,4997.0
-errors and stalls,responses cut off (finish_reason=length),11.0,10.0,0.0,0.0
-errors and stalls,output tokens in runaway responses,1262476.0,1238265.0,0.0,0.0
-errors and stalls,share of all output tokens,0.1454,0.1432,0.0,0.0
-errors and stalls,requests slower than 300s,12.0,20.0,0.0,0.0
-errors and stalls,mean request latency (s),9.59,9.27,33.89,38.08
-errors and stalls,MCP tool errors (total),154.0,158.0,14.0,9.0
-errors and stalls,sessions with an MCP tool error,91.0,102.0,12.0,8.0
+Area,Metric,Gemma (subagents) run 1,Gemma (subagents) run 2,Gemma (no subagents) run,Qwen (subagents) run 1,Qwen (subagents) run 2,Qwen (no subagents) run
+LLM requests per session (turns incl. subagents),mean,125.3,124.1,147.9,91.6,98.2,46.0
+LLM requests per session (turns incl. subagents),median,123.0,123.0,150.0,96.0,99.0,43.0
+LLM requests per session (turns incl. subagents),p90,148.0,149.2,150.0,100.2,104.2,69.0
+LLM requests per session (turns incl. subagents),max,241.0,160.0,151.0,106.0,157.0,98.0
+input tokens per session,mean,1012976.9,1021276.6,1820240.9,470361.7,499073.7,582667.7
+input tokens per session,median,1018923.0,1000812.0,1844833.0,499383.0,509486.0,538930.0
+input tokens per session,p90,1349295.6,1444805.2,1888430.2,531513.2,536311.0,874173.0
+input tokens per session,max,1942808.0,1676950.0,1927619.0,633934.0,649193.0,1309275.0
+output tokens per session,mean,51383.2,51163.0,39880.3,25588.3,26054.0,51263.0
+output tokens per session,median,43057.0,44574.0,38692.0,24648.0,24338.0,48253.0
+output tokens per session,p90,49891.4,50823.2,42574.6,30376.4,30012.0,85485.0
+output tokens per session,max,183442.0,205814.0,150949.0,42338.0,84922.0,150990.0
+output tokens per session excl. responses > 20000,mean,43912.9,43836.0,38484.6,25588.3,26054.0,46128.0
+output tokens per session excl. responses > 20000,median,42893.0,44133.0,38592.0,24648.0,24338.0,44130.0
+output tokens per session excl. responses > 20000,p90,47590.8,48523.0,42438.2,30376.4,30012.0,72617.4
+output tokens per session excl. responses > 20000,max,90447.0,57241.0,57290.0,42338.0,84922.0,141621.0
+tokens per request,mean input,8098.8,8232.2,12312.7,5306.8,5383.2,12678.1
+tokens per request,median output,251.0,250.0,149.0,139.0,133.0,290.0
+tokens per request,p99 output,3141.0,3224.8,3007.2,3837.2,3922.3,17622.4
+totals,input tokens,171193098.0,172595745.0,307620711.0,79491123.0,84343460.0,98470838.0
+totals,output tokens,8683759.0,8646543.0,6739775.0,4324425.0,4403121.0,8663455.0
+totals,LLM requests,21182.0,20981.0,24988.0,15472.0,16601.0,7768.0
+totals,usage reported by the server,0.9979,0.9993,0.9998,0.9681,0.9438,0.9999
+totals,prompt tokens served from cache (if reported),0.8631,0.8647,0.9711,0.2193,0.206,0.9303
+context (limit 24000),largest prompt (tokens),40684.0,44806.0,19252.0,28823.0,45607.0,19315.0
+context (limit 24000),largest prompt as % of limit,169.5,186.7,80.2,120.1,190.0,80.5
+context (limit 24000),requests above 80% of limit,2043.0,2160.0,44.0,343.0,364.0,28.0
+context (limit 24000),requests above the limit,936.0,957.0,0.0,55.0,88.0,0.0
+context (limit 24000),sessions with a request above the limit,168.0,166.0,0.0,34.0,43.0,0.0
+summarisation,requests flagged as summarise (heuristic: no tools + 'summar'),0.0,0.0,498.0,0.0,47.0,338.0
+summarisation,sessions with a flagged request,0.0,0.0,167.0,0.0,2.0,168.0
+turns (max 150),sessions with requests >= max turns,14.0,17.0,164.0,0.0,1.0,0.0
+turns (max 150),"longest conversation, approx. turns (max_messages / 2)",97.0,96.5,56.0,143.0,164.5,58.5
+errors and stalls,LLM requests failed or errored,44.0,14.0,4.0,493.0,933.0,1.0
+errors and stalls,requests retried after 429/503,1007.0,886.0,0.0,4648.0,4997.0,0.0
+errors and stalls,responses cut off (finish_reason=length),11.0,10.0,2.0,0.0,0.0,0.0
+errors and stalls,output tokens in runaway responses,1262476.0,1238265.0,235872.0,0.0,0.0,867828.0
+errors and stalls,share of all output tokens,0.1454,0.1432,0.035,0.0,0.0,0.1002
+errors and stalls,requests slower than 300s,12.0,20.0,6.0,0.0,0.0,1.0
+errors and stalls,mean request latency (s),9.59,9.27,4.29,33.89,38.08,8.75
+errors and stalls,MCP tool errors (total),154.0,158.0,310.0,14.0,9.0,7.0
+errors and stalls,sessions with an MCP tool error,91.0,102.0,163.0,12.0,8.0,7.0

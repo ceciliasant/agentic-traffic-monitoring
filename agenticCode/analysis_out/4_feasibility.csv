@@ -1,5 +1,7 @@
 ,sessions,finished within 60 min,finished within 10 min,slower than the hourly slot,slowest (min),hourly operation feasible (max < slot)
 Gemma (subagents) run 1,169,1.0,0.929,0,30.2,True
 Gemma (subagents) run 2,169,1.0,0.9231,0,41.8,True
+Gemma (no subagents) run,169,0.9822,0.9527,3,577.6,False
 Qwen (subagents) run 1,169,1.0,1.0,0,5.9,True
 Qwen (subagents) run 2,169,1.0,0.9527,0,21.9,True
+Qwen (no subagents) run,169,1.0,0.8757,0,19.6,True

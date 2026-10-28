@@ -1,31 +1,31 @@
-Area,Metric,Gemma (subagents) run 1,Gemma (subagents) run 2,Qwen (subagents) run 1,Qwen (subagents) run 2
-Sessions,classic hours in the reference,169,169,169,169
-Sessions,agent sessions run,169,169,169,169
-Sessions,goose exit code 0,169 (1.0),169 (1.0),169 (1.0),169 (1.0)
-Sessions,completed (run summary + final Ditto logged),169 (1.0),167 (0.9882),164 (0.9704),164 (0.9704)
-Sessions,repeated sessions for an hour,0,1,0,0
-Sessions,build_summary_table succeeded for both corridors,90 of 169,87 of 169,164 of 169,164 of 169
-Sessions,build_summary_table succeeded for no corridor,32 of 169,43 of 169,5 of 169,4 of 169
-Prediction coverage,node-hours classic predicted,2028,2028,2028,2028
-Prediction coverage,node-hours agent predicted,1936,1938,1754,1880
-Prediction coverage,mean coverage vs classic,0.9546,0.9556,0.8649,0.927
-Prediction coverage,missing node-hours,92 (0.0454),90 (0.0444),274 (0.1351),148 (0.073)
-Prediction coverage,extra node-hours,0,0,0,0
-Prediction coverage,sessions with full coverage,117 of 169,117 of 169,96 of 169,126 of 169
-Input correctness,baseline_predict calls,2101,2103,1891,2007
-Input correctness,calls with a wrong payload,162 (0.0771),156 (0.0742),16 (0.0085),9 (0.0045)
-Input correctness,get_flows calls for the wrong hour,0,0,2,2
-Input correctness,calls to nodes that should not be touched,0,0,0,0
-Prediction agreement,node-hours compared,1930,1938,1751,1879
-Prediction agreement,exact match (|diff| <= tol),0.999,0.999,1.0,1.0
-Prediction agreement,mean abs diff (veh/h),0.5682,0.5659,0.0,0.0
-Prediction agreement,max abs diff (veh/h),596.7,596.7,0.0,0.0
-Forecast accuracy vs observed,mean SMAPE classic,0.0652,0.0644,0.0635,0.0639
-Forecast accuracy vs observed,mean SMAPE agent,0.0653,0.0645,0.0635,0.0639
-Forecast accuracy vs observed,share of node-hours where agent is worse,0.001,0.001,0.0,0.0
-Evaluation correctness,sessions where an evaluation was expected,168,168,168,168
-Evaluation correctness,mean evaluation coverage vs classic,0.943,0.9871,0.7907,0.9172
-Evaluation correctness,check_deviation calls,1907,2011,1630,1890
-Evaluation correctness,check_deviation calls with wrong arguments,0 (0.0),0 (0.0),8 (0.0049),3 (0.0016)
-Evaluation correctness,overall verdict matches classic,0.9763,0.9822,0.9053,0.9231
-Evaluation correctness,run-summary counts match classic,0.6391,0.8817,0.4793,0.7751
+Area,Metric,Gemma (subagents) run 1,Gemma (subagents) run 2,Gemma (no subagents) run,Qwen (subagents) run 1,Qwen (subagents) run 2,Qwen (no subagents) run
+Sessions,classic hours in the reference,169,169,169,169,169,169
+Sessions,agent sessions run,169,169,169,169,169,169
+Sessions,goose exit code 0,169 (1.0),169 (1.0),167 (0.9882),169 (1.0),169 (1.0),169 (1.0)
+Sessions,completed (run summary + final Ditto logged),169 (1.0),167 (0.9882),1 (0.006),164 (0.9704),164 (0.9704),167 (0.9882)
+Sessions,repeated sessions for an hour,0,1,1,0,0,0
+Sessions,build_summary_table succeeded for both corridors,90 of 169,87 of 169,1 of 168,164 of 169,164 of 169,168 of 169
+Sessions,build_summary_table succeeded for no corridor,32 of 169,43 of 169,163 of 168,5 of 169,4 of 169,1 of 169
+Prediction coverage,node-hours classic predicted,2028,2028,2016,2028,2028,2028
+Prediction coverage,node-hours agent predicted,1936,1938,1572,1754,1880,2017
+Prediction coverage,mean coverage vs classic,0.9546,0.9556,0.7798,0.8649,0.927,0.9946
+Prediction coverage,missing node-hours,92 (0.0454),90 (0.0444),444 (0.2202),274 (0.1351),148 (0.073),11 (0.0054)
+Prediction coverage,extra node-hours,0,0,0,0,0,0
+Prediction coverage,sessions with full coverage,117 of 169,117 of 169,12 of 168,96 of 169,126 of 169,159 of 169
+Input correctness,baseline_predict calls,2101,2103,4742,1891,2007,2321
+Input correctness,calls with a wrong payload,162 (0.0771),156 (0.0742),390 (0.0822),16 (0.0085),9 (0.0045),90 (0.0388)
+Input correctness,get_flows calls for the wrong hour,0,0,0,2,2,1
+Input correctness,calls to nodes that should not be touched,0,0,0,0,0,0
+Prediction agreement,node-hours compared,1930,1938,1570,1751,1879,2006
+Prediction agreement,exact match (|diff| <= tol),0.999,0.999,0.9981,1.0,1.0,0.999
+Prediction agreement,mean abs diff (veh/h),0.5682,0.5659,0.9193,0.0,0.0,0.2812
+Prediction agreement,max abs diff (veh/h),596.7,596.7,595.15,0.0,0.0,337.52
+Forecast accuracy vs observed,mean SMAPE classic,0.0652,0.0644,0.0626,0.0635,0.0639,0.0649
+Forecast accuracy vs observed,mean SMAPE agent,0.0653,0.0645,0.0628,0.0635,0.0639,0.0649
+Forecast accuracy vs observed,share of node-hours where agent is worse,0.001,0.001,0.0019,0.0,0.0,0.0005
+Evaluation correctness,sessions where an evaluation was expected,168,168,167,168,168,168
+Evaluation correctness,mean evaluation coverage vs classic,0.943,0.9871,0.7066,0.7907,0.9172,0.9871
+Evaluation correctness,check_deviation calls,1907,2011,4003,1630,1890,2277
+Evaluation correctness,check_deviation calls with wrong arguments,0 (0.0),0 (0.0),0 (0.0),8 (0.0049),3 (0.0016),2 (0.0009)
+Evaluation correctness,overall verdict matches classic,0.9763,0.9822,0.006,0.9053,0.9231,0.9822
+Evaluation correctness,run-summary counts match classic,0.6391,0.8817,0.006,0.4793,0.7751,0.9172

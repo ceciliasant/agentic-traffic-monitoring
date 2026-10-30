@@ -13,7 +13,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 # environment read at import time
 os.environ.setdefault("GOOSE_MODEL", "test-model")
